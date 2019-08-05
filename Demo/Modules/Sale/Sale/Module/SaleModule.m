@@ -10,6 +10,7 @@
 #import "SaleModule.h"
 #import "ShoppingCartManager.h"
 #import "SaleManager.h"
+#import "ShoppingCartViewController.h"
 
 @interface SaleModule()
 
@@ -19,6 +20,11 @@
 
 + (void)load {
     BFRegister(SaleModuleService);
+    
+    [Bifrost bindURL:kRouteSaleShoppingCart toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+        ShoppingCartViewController *vc = [[ShoppingCartViewController alloc] init];
+        return vc;
+    }];
 }
 
 #pragma mark - BifrostModuleProtocol methods

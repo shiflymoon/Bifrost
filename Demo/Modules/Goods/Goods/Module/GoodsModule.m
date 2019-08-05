@@ -9,11 +9,34 @@
 #import "GoodsModule.h"
 #import "GoodsModel.h"
 #import "GoodsManager.h"
+#import "GoodsListViewController.h"
+#import "GoodsDetailsViewController.h"
 
 @implementation GoodsModule
 
 + (void)load {
     BFRegister(GoodsModuleService);
+    
+    //GoodsListViewController对外服务
+    [Bifrost bindURL:kRouteAllGoodsList toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+        GoodsListViewController *vc = [[GoodsListViewController alloc] initWithStyle:UITableViewStylePlain];
+        return vc;
+    }];
+    
+    //GoodsDetailsViewController对外服务
+    [Bifrost bindURL:kRouteGoodsDetail toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+        GoodsDetailsViewController *vc = [[GoodsDetailsViewController alloc] init];
+        vc.goodsId = parameters[kRouteGoodsDetailParamId];
+        return vc;
+    }];
+    for (NSInteger i=0; i<10000; i++) {
+        NSString *url = BFStr(@"//test/test_%ld", i);
+        [Bifrost bindURL:url toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+            GoodsDetailsViewController *vc = [[GoodsDetailsViewController alloc] init];
+            vc.goodsId = parameters[kRouteGoodsDetailParamId];
+            return vc;
+        }];
+    }
 }
 
 #pragma mark - BifrostModuleProtocol methods

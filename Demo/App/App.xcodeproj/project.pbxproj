@@ -402,7 +402,7 @@
 				TargetAttributes = {
 					87E163DF1F6CBDD900EAB464 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = RNG6JK98J6;
+						DevelopmentTeam = Z2KFJNX8WQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -777,11 +777,11 @@
 			baseConfigurationReference = 268B0B8DDD630B7029268896 /* Pods-BifrostDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RNG6JK98J6;
+				DEVELOPMENT_TEAM = Z2KFJNX8WQ;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Definition/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youzan.bifrost.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youzan.bifrost.demo.abc.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -792,11 +792,11 @@
 			baseConfigurationReference = 1174B3C75BF38EF1079563AF /* Pods-BifrostDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RNG6JK98J6;
+				DEVELOPMENT_TEAM = Z2KFJNX8WQ;
 				INFOPLIST_FILE = "$(SRCROOT)/App/Definition/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.youzan.bifrost.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.youzan.bifrost.demo.abc.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

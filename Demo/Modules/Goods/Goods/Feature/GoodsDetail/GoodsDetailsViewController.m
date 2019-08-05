@@ -14,12 +14,13 @@
 
 @interface GoodsDetailsViewController ()
 
-@property (nonatomic, strong) NSString *goodsId;
+//@property (nonatomic, strong) NSString *goodsId;
 
 @end
 
 @implementation GoodsDetailsViewController
-
+//建议有关注册的全部移动到对外Module接口中，方便管理，同时减少对业务代码入侵
+/*
 + (void)load {
     [Bifrost bindURL:kRouteGoodsDetail toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
         GoodsDetailsViewController *vc = [[self alloc] init];
@@ -34,7 +35,7 @@
             return vc;
         }];
     }
-}
+}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -9,6 +9,7 @@
 #import "ShopModule.h"
 #import "ShopBundle.h"
 #import "ShopManager.h"
+#import "ShopDetailViewController.h"
 
 @implementation ShopModule
 
@@ -17,6 +18,13 @@
     for(NSInteger i=0; i<100; i++) {
         BFRegister(ShopModuleService);
     }
+    
+    //ShopDetailViewController对外提供的可用服务
+    [Bifrost bindURL:kRouteShopDetail toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+        ShopDetailViewController *vc = [[ShopDetailViewController alloc] init];
+        return vc;
+    }];
+    
 }
 
 #pragma mark - BifrostModuleProtocol methods

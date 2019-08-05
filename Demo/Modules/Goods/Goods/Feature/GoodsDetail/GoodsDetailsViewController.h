@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GoodsDetailsViewController : UIViewController
-
+@property (nonatomic, strong) NSString *goodsId;
 @end

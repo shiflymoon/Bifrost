@@ -15,13 +15,14 @@
 @end
 
 @implementation GoodsListViewController
-
+//建议有关注册的全部移动到对外Module接口中，方便管理，同时减少对业务代码入侵
+/*
 + (void)load {
     [Bifrost bindURL:kRouteAllGoodsList toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
         GoodsListViewController *vc = [[self alloc] initWithStyle:UITableViewStylePlain];
         return vc;
     }];
-}
+}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];

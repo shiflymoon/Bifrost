@@ -8,11 +8,19 @@
 
 #import "HomeModule.h"
 #import "HomeViewController.h"
+#import "HomeBundle.h"
 
 @implementation HomeModule
 
 + (void)load {
     BFRegister(HomeModuleService);
+    
+    //HomeViewController
+    [Bifrost bindURL:kRouteHomePage
+           toHandler:^id _Nullable(NSDictionary * _Nullable parameters) {
+               UIViewController *vc = [[HomeBundle storyboardWithName:@"home"] instantiateViewControllerWithIdentifier:@"HomeViewController"];
+               return vc;
+           }];
 }
 
 #pragma mark - BifrostModuleProtocol
