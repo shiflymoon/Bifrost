@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0637BD22FA64140061FE56 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0637BC22FA64140061FE56 /* image.xcassets */; };
+		FB0637CA22FA641F0061FE56 /* ShopBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0637C022FA641F0061FE56 /* ShopBundle.m */; };
+		FB0637CC22FA641F0061FE56 /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0637C622FA641F0061FE56 /* ShopDetailViewController.m */; };
+		FB0637CD22FA641F0061FE56 /* ShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0637C922FA641F0061FE56 /* ShopManager.m */; };
+		FB0637D022FA64E60061FE56 /* Target_ShopModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0637CF22FA64E60061FE56 /* Target_ShopModule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB0637A322FA614F0061FE56 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB0637A522FA614F0061FE56 /* libShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0637B522FA61780061FE56 /* ShopBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0637B722FA61780061FE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0637BC22FA64140061FE56 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		FB0637C022FA641F0061FE56 /* ShopBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopBundle.m; sourceTree = "<group>"; };
+		FB0637C222FA641F0061FE56 /* ShopBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopBundle.h; sourceTree = "<group>"; };
+		FB0637C522FA641F0061FE56 /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
+		FB0637C622FA641F0061FE56 /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
+		FB0637C822FA641F0061FE56 /* ShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopManager.h; sourceTree = "<group>"; };
+		FB0637C922FA641F0061FE56 /* ShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopManager.m; sourceTree = "<group>"; };
+		FB0637CE22FA64E60061FE56 /* Target_ShopModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ShopModule.h; sourceTree = "<group>"; };
+		FB0637CF22FA64E60061FE56 /* Target_ShopModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ShopModule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB0637A222FA614F0061FE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0637B222FA61780061FE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB06379C22FA614F0061FE56 = {
+			isa = PBXGroup;
+			children = (
+				FB0637A722FA614F0061FE56 /* Shop */,
+				FB0637B622FA61780061FE56 /* ShopBundle */,
+				FB0637A622FA614F0061FE56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB0637A622FA614F0061FE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637A522FA614F0061FE56 /* libShop.a */,
+				FB0637B522FA61780061FE56 /* ShopBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0637A722FA614F0061FE56 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637C322FA641F0061FE56 /* Feature */,
+				FB0637BE22FA641F0061FE56 /* Module */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		FB0637B622FA61780061FE56 /* ShopBundle */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637BB22FA64140061FE56 /* Resource */,
+				FB0637B722FA61780061FE56 /* Info.plist */,
+			);
+			path = ShopBundle;
+			sourceTree = "<group>";
+		};
+		FB0637BB22FA64140061FE56 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637BC22FA64140061FE56 /* image.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FB0637BE22FA641F0061FE56 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637C022FA641F0061FE56 /* ShopBundle.m */,
+				FB0637C222FA641F0061FE56 /* ShopBundle.h */,
+				FB0637CE22FA64E60061FE56 /* Target_ShopModule.h */,
+				FB0637CF22FA64E60061FE56 /* Target_ShopModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FB0637C322FA641F0061FE56 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637C422FA641F0061FE56 /* ShopDetail */,
+				FB0637C722FA641F0061FE56 /* ShopManager */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		FB0637C422FA641F0061FE56 /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637C522FA641F0061FE56 /* ShopDetailViewController.h */,
+				FB0637C622FA641F0061FE56 /* ShopDetailViewController.m */,
+			);
+			path = ShopDetail;
+			sourceTree = "<group>";
+		};
+		FB0637C722FA641F0061FE56 /* ShopManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB0637C822FA641F0061FE56 /* ShopManager.h */,
+				FB0637C922FA641F0061FE56 /* ShopManager.m */,
+			);
+			path = ShopManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB0637A422FA614F0061FE56 /* Shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0637AE22FA614F0061FE56 /* Build configuration list for PBXNativeTarget "Shop" */;
+			buildPhases = (
+				FB0637A122FA614F0061FE56 /* Sources */,
+				FB0637A222FA614F0061FE56 /* Frameworks */,
+				FB0637A322FA614F0061FE56 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shop;
+			productName = Shop;
+			productReference = FB0637A522FA614F0061FE56 /* libShop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FB0637B422FA61780061FE56 /* ShopBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0637B822FA61780061FE56 /* Build configuration list for PBXNativeTarget "ShopBundle" */;
+			buildPhases = (
+				FB0637B122FA61780061FE56 /* Sources */,
+				FB0637B222FA61780061FE56 /* Frameworks */,
+				FB0637B322FA61780061FE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShopBundle;
+			productName = ShopBundle;
+			productReference = FB0637B522FA61780061FE56 /* ShopBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB06379D22FA614F0061FE56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "史贵岭";
+				TargetAttributes = {
+					FB0637A422FA614F0061FE56 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FB0637B422FA61780061FE56 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = FB0637A022FA614F0061FE56 /* Build configuration list for PBXProject "Shop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB06379C22FA614F0061FE56;
+			productRefGroup = FB0637A622FA614F0061FE56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB0637A422FA614F0061FE56 /* Shop */,
+				FB0637B422FA61780061FE56 /* ShopBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB0637B322FA61780061FE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0637BD22FA64140061FE56 /* image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB0637A122FA614F0061FE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0637D022FA64E60061FE56 /* Target_ShopModule.m in Sources */,
+				FB0637CA22FA641F0061FE56 /* ShopBundle.m in Sources */,
+				FB0637CD22FA641F0061FE56 /* ShopManager.m in Sources */,
+				FB0637CC22FA641F0061FE56 /* ShopDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0637B122FA61780061FE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB0637AC22FA614F0061FE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB0637AD22FA614F0061FE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0637AF22FA614F0061FE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../SaleModule_Category/\"/**",
+					"\"${SRCROOT}/../Common/\"/**",
+					"\"${SRCROOT}/../../Pods/\"/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB0637B022FA614F0061FE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../SaleModule_Category/\"/**",
+					"\"${SRCROOT}/../Common/\"/**",
+					"\"${SRCROOT}/../../Pods/\"/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB0637B922FA61780061FE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShopBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.SkyEyePublic.ShopBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB0637BA22FA61780061FE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShopBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.SkyEyePublic.ShopBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0637A022FA614F0061FE56 /* Build configuration list for PBXProject "Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0637AC22FA614F0061FE56 /* Debug */,
+				FB0637AD22FA614F0061FE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0637AE22FA614F0061FE56 /* Build configuration list for PBXNativeTarget "Shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0637AF22FA614F0061FE56 /* Debug */,
+				FB0637B022FA614F0061FE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0637B822FA61780061FE56 /* Build configuration list for PBXNativeTarget "ShopBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0637B922FA61780061FE56 /* Debug */,
+				FB0637BA22FA61780061FE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB06379D22FA614F0061FE56 /* Project object */;
+}

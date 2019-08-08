@@ -1,0 +1,1012 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02FF46CE21C6F721943446A66B0CD56C /* YZSTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A877FF98BC66286B471145A577133AA /* YZSTableViewCellModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0A9E60B197B6FBE7574BAC4B6166BAEE /* Pods-TargetActionMediaDemo-Common-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F785AEB2F2B25260AFB7C4B7CF79AD04 /* Pods-TargetActionMediaDemo-Common-dummy.m */; };
+		189C2368A7635959A5E1536BAE7A3ABE /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF659D916049842C0559787F5631EAA /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		23F59F6C23C2FA4894738C6D4574DF71 /* CTMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADDA0EBD9A61C5519419FBCEF098CF0 /* CTMediator-dummy.m */; };
+		2468BAC92D8016307969093A1E96C2F3 /* YZSTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 643C1DC0344D803F187D4343C6C20881 /* YZSTableViewModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		28599E035FBD39F7DE24B78F1549EFD2 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED4598F7B3DB3CB64C60EFEAD151E4A /* YYModel-dummy.m */; };
+		350F53538E272E33A6DEE60CF75862BC /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C3597A9B77710740AB8963677EAC00 /* YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		408B28E4011895C83CFDF38C60CA7739 /* YZSTableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4430337FE3C8655549B1C7694A7EDE10 /* YZSTableViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		444B5108AD682A2D0E0CD95264481992 /* SigmaTableViewModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A47D48FB9F4A19B90B7BD6AE8CCBA4 /* SigmaTableViewModel-dummy.m */; };
+		505327F493FE2CD6B802D1F2D081E99C /* CTMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EC00760A1989A04E540AD4BF99E5FB /* CTMediator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70B1CAFA7A61AAA4C92B1E55AC2B1F1A /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CD17C14AD67A1C70F09B418478D9969E /* YYClassInfo.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7BE2318A982D28F790679696AE10D61C /* YZSTableViewSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9F829A4D9DFE34D1075C8DE52DFFD0 /* YZSTableViewSectionModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82342B47913E3D3F2943C6827F3ABB22 /* YZSTableViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DBAFF83803334C03DE877005E09CF6 /* YZSTableViewSectionModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8FBED9C849B923F31F9017F7D300AA78 /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6630AC51DB6CEED162F23C8D8EF32ABA /* CTMediator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AA211B9331174BF1B7E151639377BCBB /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E63C2DEFA5C988AA25C3F29726264268 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3DFC7BB413E35D777C7B9503FCCEB17 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B843D00CAE168D7CF657CE517384E42 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA9D1B2B822DDCF54FDAB644FDC5D037 /* YZSTableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 67972C5C604621F56A04800BB8A2BA29 /* YZSTableViewCellModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DAD1CAA070EB177316EA138BDDAF870E /* Pods-TargetActionMediaDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A8563344D686D2C61E01DF9A9B14C /* Pods-TargetActionMediaDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F89F823D826DCCD6AB08B3A00077344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFEA08FBDCF7A6AB30A042B4565C646;
+			remoteInfo = YYModel;
+		};
+		4AD50A5AF3B4A30C2D2F941DCC941104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFEA08FBDCF7A6AB30A042B4565C646;
+			remoteInfo = YYModel;
+		};
+		5E61AAE0E8577314487B21C29E6E8465 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A70C8A21E98563590383196A2B56CBD;
+			remoteInfo = SigmaTableViewModel;
+		};
+		77D9E20B36B49111D8F4E726B969A08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9AEEB3FEF9F50CBFE1C63CD3D6489FE;
+			remoteInfo = CTMediator;
+		};
+		C561592E04992F6F0903D640B1BB893F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A70C8A21E98563590383196A2B56CBD;
+			remoteInfo = SigmaTableViewModel;
+		};
+		E8E4E5957412E5007B1279D0E093F567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9AEEB3FEF9F50CBFE1C63CD3D6489FE;
+			remoteInfo = CTMediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C76DC9E72E33383484DF2E73C50F8E /* CTMediator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CTMediator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0ED4598F7B3DB3CB64C60EFEAD151E4A /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		11A47D48FB9F4A19B90B7BD6AE8CCBA4 /* SigmaTableViewModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SigmaTableViewModel-dummy.m"; sourceTree = "<group>"; };
+		1ADDA0EBD9A61C5519419FBCEF098CF0 /* CTMediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTMediator-dummy.m"; sourceTree = "<group>"; };
+		3F106FAA78A4E5EBB020610C2547719D /* CTMediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTMediator.xcconfig; sourceTree = "<group>"; };
+		4430337FE3C8655549B1C7694A7EDE10 /* YZSTableViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YZSTableViewModel.h; path = SigmaTableViewModel/Lib/YZSTableViewModel.h; sourceTree = "<group>"; };
+		4A877FF98BC66286B471145A577133AA /* YZSTableViewCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YZSTableViewCellModel.m; path = SigmaTableViewModel/Lib/YZSTableViewCellModel.m; sourceTree = "<group>"; };
+		507A8563344D686D2C61E01DF9A9B14C /* Pods-TargetActionMediaDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TargetActionMediaDemo-dummy.m"; sourceTree = "<group>"; };
+		5933F5E0AC4352EDE0444813C8BC3375 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		5B843D00CAE168D7CF657CE517384E42 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		60A4F743B9EABE5A03482DC115B1F9CA /* Pods-TargetActionMediaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TargetActionMediaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		643C1DC0344D803F187D4343C6C20881 /* YZSTableViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YZSTableViewModel.m; path = SigmaTableViewModel/Lib/YZSTableViewModel.m; sourceTree = "<group>"; };
+		6630AC51DB6CEED162F23C8D8EF32ABA /* CTMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTMediator.m; path = CTMediator/CTMediator/CTMediator.m; sourceTree = "<group>"; };
+		67972C5C604621F56A04800BB8A2BA29 /* YZSTableViewCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YZSTableViewCellModel.h; path = SigmaTableViewModel/Lib/YZSTableViewCellModel.h; sourceTree = "<group>"; };
+		68EC00760A1989A04E540AD4BF99E5FB /* CTMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTMediator.h; path = CTMediator/CTMediator/CTMediator.h; sourceTree = "<group>"; };
+		6EF659D916049842C0559787F5631EAA /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		6FC7F341A9D81D869A756AA55D978942 /* Pods-TargetActionMediaDemo-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TargetActionMediaDemo-Common.debug.xcconfig"; sourceTree = "<group>"; };
+		73C3597A9B77710740AB8963677EAC00 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		75FC437EC8F5FF1EB9CE2331ACCC9E01 /* Pods-TargetActionMediaDemo-Common.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TargetActionMediaDemo-Common.release.xcconfig"; sourceTree = "<group>"; };
+		7CE5AC70BC38D438CE4EC303A22E3176 /* Pods-TargetActionMediaDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TargetActionMediaDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		7ECCCAFA0C50618AE13A94564DFB2BC0 /* Pods-TargetActionMediaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TargetActionMediaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		869340FF1A1F2446BC76B228C4D5A1C9 /* CTMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-prefix.pch"; sourceTree = "<group>"; };
+		943D7109FB91B03990BD434E5AE80833 /* YYModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YYModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99DA72DFFC4B40FDBB8CE38C580BF655 /* SigmaTableViewModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SigmaTableViewModel.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2DBAFF83803334C03DE877005E09CF6 /* YZSTableViewSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YZSTableViewSectionModel.m; path = SigmaTableViewModel/Lib/YZSTableViewSectionModel.m; sourceTree = "<group>"; };
+		A9BB14FEF166C926B0EE6D2F47417F8D /* Pods-TargetActionMediaDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TargetActionMediaDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1EBC5062E314348F0CBE66B8C6FF364 /* Pods-TargetActionMediaDemo-Common-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TargetActionMediaDemo-Common-acknowledgements.plist"; sourceTree = "<group>"; };
+		C82901821E67A424347F64341466306C /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		C9DF76E7E34FB1903A33656F24A303F5 /* libSigmaTableViewModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSigmaTableViewModel.a; path = libSigmaTableViewModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD17C14AD67A1C70F09B418478D9969E /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		CF5B6B122759C195D1E16164DAC27738 /* SigmaTableViewModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SigmaTableViewModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E189B2F5C9FA119544E9A7224ACC649E /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C9998B97AE3E8B418331096D390BA0 /* libPods-TargetActionMediaDemo-Common.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TargetActionMediaDemo-Common.a"; path = "libPods-TargetActionMediaDemo-Common.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63C2DEFA5C988AA25C3F29726264268 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		EE2D108F255493989284AB699E5741E4 /* libPods-TargetActionMediaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TargetActionMediaDemo.a"; path = "libPods-TargetActionMediaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0965916DE498A6FB6FF7CEB43EB5A81 /* Pods-TargetActionMediaDemo-Common-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TargetActionMediaDemo-Common-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F785AEB2F2B25260AFB7C4B7CF79AD04 /* Pods-TargetActionMediaDemo-Common-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TargetActionMediaDemo-Common-dummy.m"; sourceTree = "<group>"; };
+		FC9F829A4D9DFE34D1075C8DE52DFFD0 /* YZSTableViewSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YZSTableViewSectionModel.h; path = SigmaTableViewModel/Lib/YZSTableViewSectionModel.h; sourceTree = "<group>"; };
+		FD8510CE322169033E9DE966FC06DED3 /* libCTMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCTMediator.a; path = libCTMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0FFEEA904A01B87DA4CA9B111C81AE /* SigmaTableViewModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SigmaTableViewModel-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201E746D7EAEE22B2B7EEB5965CF5024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5F166092DF9F1294497F1476CE6085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A893724DFEE94460FC685824F1AA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF20B16C528D9E6BD38612D8ECB96CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D096224103AC64EC4212E3A45BE57DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10246D24BA6DE91DCE41CFD7BF3FF008 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CF5B6B122759C195D1E16164DAC27738 /* SigmaTableViewModel.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		154363D011C061B23F08ACB2BBFA5AAB /* SigmaTableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67972C5C604621F56A04800BB8A2BA29 /* YZSTableViewCellModel.h */,
+				4A877FF98BC66286B471145A577133AA /* YZSTableViewCellModel.m */,
+				4430337FE3C8655549B1C7694A7EDE10 /* YZSTableViewModel.h */,
+				643C1DC0344D803F187D4343C6C20881 /* YZSTableViewModel.m */,
+				FC9F829A4D9DFE34D1075C8DE52DFFD0 /* YZSTableViewSectionModel.h */,
+				A2DBAFF83803334C03DE877005E09CF6 /* YZSTableViewSectionModel.m */,
+				10246D24BA6DE91DCE41CFD7BF3FF008 /* Pod */,
+				F19898E3484BC8C32A1DFDE46C23A30A /* Support Files */,
+			);
+			name = SigmaTableViewModel;
+			path = ../LocalPod;
+			sourceTree = "<group>";
+		};
+		15984129E54CA23C93F2FFBA21150F50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5933F5E0AC4352EDE0444813C8BC3375 /* YYModel.xcconfig */,
+				0ED4598F7B3DB3CB64C60EFEAD151E4A /* YYModel-dummy.m */,
+				C82901821E67A424347F64341466306C /* YYModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		3361ACA7F4DF6288BA6D294BDE823D7C /* Pods-TargetActionMediaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A9BB14FEF166C926B0EE6D2F47417F8D /* Pods-TargetActionMediaDemo-acknowledgements.markdown */,
+				7CE5AC70BC38D438CE4EC303A22E3176 /* Pods-TargetActionMediaDemo-acknowledgements.plist */,
+				507A8563344D686D2C61E01DF9A9B14C /* Pods-TargetActionMediaDemo-dummy.m */,
+				60A4F743B9EABE5A03482DC115B1F9CA /* Pods-TargetActionMediaDemo.debug.xcconfig */,
+				7ECCCAFA0C50618AE13A94564DFB2BC0 /* Pods-TargetActionMediaDemo.release.xcconfig */,
+			);
+			name = "Pods-TargetActionMediaDemo";
+			path = "Target Support Files/Pods-TargetActionMediaDemo";
+			sourceTree = "<group>";
+		};
+		365ADECDF42CEF96F1166A36955F96C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				943D7109FB91B03990BD434E5AE80833 /* YYModel.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		424CAA467249849A06A5BC2367AA3CF9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4409FA4A3C8B1EDC5B54661937A92F95 /* CTMediator */,
+				154363D011C061B23F08ACB2BBFA5AAB /* SigmaTableViewModel */,
+				83C084C361D328EC6D2A8664B4ED33BF /* YYModel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4409FA4A3C8B1EDC5B54661937A92F95 /* CTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				68EC00760A1989A04E540AD4BF99E5FB /* CTMediator.h */,
+				6630AC51DB6CEED162F23C8D8EF32ABA /* CTMediator.m */,
+				E5883B3E606D28A24E5FDD85F5BF83C7 /* Pod */,
+				BCD37ADB0D340416FA5BD8827F32802E /* Support Files */,
+			);
+			name = CTMediator;
+			path = ../LocalPod;
+			sourceTree = "<group>";
+		};
+		451952422833B361693341CC5588E9ED /* Pods-TargetActionMediaDemo-Common */ = {
+			isa = PBXGroup;
+			children = (
+				F0965916DE498A6FB6FF7CEB43EB5A81 /* Pods-TargetActionMediaDemo-Common-acknowledgements.markdown */,
+				C1EBC5062E314348F0CBE66B8C6FF364 /* Pods-TargetActionMediaDemo-Common-acknowledgements.plist */,
+				F785AEB2F2B25260AFB7C4B7CF79AD04 /* Pods-TargetActionMediaDemo-Common-dummy.m */,
+				6FC7F341A9D81D869A756AA55D978942 /* Pods-TargetActionMediaDemo-Common.debug.xcconfig */,
+				75FC437EC8F5FF1EB9CE2331ACCC9E01 /* Pods-TargetActionMediaDemo-Common.release.xcconfig */,
+			);
+			name = "Pods-TargetActionMediaDemo-Common";
+			path = "Target Support Files/Pods-TargetActionMediaDemo-Common";
+			sourceTree = "<group>";
+		};
+		83C084C361D328EC6D2A8664B4ED33BF /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B843D00CAE168D7CF657CE517384E42 /* NSObject+YYModel.h */,
+				6EF659D916049842C0559787F5631EAA /* NSObject+YYModel.m */,
+				E63C2DEFA5C988AA25C3F29726264268 /* YYClassInfo.h */,
+				CD17C14AD67A1C70F09B418478D9969E /* YYClassInfo.m */,
+				73C3597A9B77710740AB8963677EAC00 /* YYModel.h */,
+				365ADECDF42CEF96F1166A36955F96C9 /* Pod */,
+				15984129E54CA23C93F2FFBA21150F50 /* Support Files */,
+			);
+			name = YYModel;
+			path = ../LocalPod;
+			sourceTree = "<group>";
+		};
+		BCD37ADB0D340416FA5BD8827F32802E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F106FAA78A4E5EBB020610C2547719D /* CTMediator.xcconfig */,
+				1ADDA0EBD9A61C5519419FBCEF098CF0 /* CTMediator-dummy.m */,
+				869340FF1A1F2446BC76B228C4D5A1C9 /* CTMediator-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/CTMediator";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				424CAA467249849A06A5BC2367AA3CF9 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				E4DA22C676DE768538F50BE0C330282E /* Products */,
+				D1110343797F64E817251F1339CA5C31 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1110343797F64E817251F1339CA5C31 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3361ACA7F4DF6288BA6D294BDE823D7C /* Pods-TargetActionMediaDemo */,
+				451952422833B361693341CC5588E9ED /* Pods-TargetActionMediaDemo-Common */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4DA22C676DE768538F50BE0C330282E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD8510CE322169033E9DE966FC06DED3 /* libCTMediator.a */,
+				EE2D108F255493989284AB699E5741E4 /* libPods-TargetActionMediaDemo.a */,
+				E3C9998B97AE3E8B418331096D390BA0 /* libPods-TargetActionMediaDemo-Common.a */,
+				C9DF76E7E34FB1903A33656F24A303F5 /* libSigmaTableViewModel.a */,
+				E189B2F5C9FA119544E9A7224ACC649E /* libYYModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5883B3E606D28A24E5FDD85F5BF83C7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04C76DC9E72E33383484DF2E73C50F8E /* CTMediator.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F19898E3484BC8C32A1DFDE46C23A30A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99DA72DFFC4B40FDBB8CE38C580BF655 /* SigmaTableViewModel.xcconfig */,
+				11A47D48FB9F4A19B90B7BD6AE8CCBA4 /* SigmaTableViewModel-dummy.m */,
+				FF0FFEEA904A01B87DA4CA9B111C81AE /* SigmaTableViewModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/SigmaTableViewModel";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D474C85187E93D550E47D6BBA5E1D20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505327F493FE2CD6B802D1F2D081E99C /* CTMediator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A8C4A19DA21A3A8858E720D61C5A41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9D1B2B822DDCF54FDAB644FDC5D037 /* YZSTableViewCellModel.h in Headers */,
+				408B28E4011895C83CFDF38C60CA7739 /* YZSTableViewModel.h in Headers */,
+				7BE2318A982D28F790679696AE10D61C /* YZSTableViewSectionModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB0AC31364A9F577247952CB855851C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47FF007B66DB3E0F1491935B4EC6F4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D17066015512070524A4C491124FCDCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DFC7BB413E35D777C7B9503FCCEB17 /* NSObject+YYModel.h in Headers */,
+				AA211B9331174BF1B7E151639377BCBB /* YYClassInfo.h in Headers */,
+				350F53538E272E33A6DEE60CF75862BC /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		505DD2C238ACF426B92D20F5B2FEF455 /* Pods-TargetActionMediaDemo-Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5093CA7D690346E53FBAD8205D919860 /* Build configuration list for PBXNativeTarget "Pods-TargetActionMediaDemo-Common" */;
+			buildPhases = (
+				ACB0AC31364A9F577247952CB855851C /* Headers */,
+				30DCDED20C9002E24E3F291B853F03D3 /* Sources */,
+				2F5F166092DF9F1294497F1476CE6085 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9C56108FFAEF0ED205F9167FA38452D /* PBXTargetDependency */,
+				F02DCC0F610F7F450D8ECA353EE7F4FE /* PBXTargetDependency */,
+				572E3B2C46885442529D780058FC1640 /* PBXTargetDependency */,
+			);
+			name = "Pods-TargetActionMediaDemo-Common";
+			productName = "Pods-TargetActionMediaDemo-Common";
+			productReference = E3C9998B97AE3E8B418331096D390BA0 /* libPods-TargetActionMediaDemo-Common.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A70C8A21E98563590383196A2B56CBD /* SigmaTableViewModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE4F3D5A36A9DDA7EE9F061D7676CAD /* Build configuration list for PBXNativeTarget "SigmaTableViewModel" */;
+			buildPhases = (
+				81A8C4A19DA21A3A8858E720D61C5A41 /* Headers */,
+				6D515F9D0CE65A3EC5070F31983C6753 /* Sources */,
+				201E746D7EAEE22B2B7EEB5965CF5024 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SigmaTableViewModel;
+			productName = SigmaTableViewModel;
+			productReference = C9DF76E7E34FB1903A33656F24A303F5 /* libSigmaTableViewModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B13CD417CBD237BFE6686582AA537B35 /* Pods-TargetActionMediaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA55114E11163BCF75973A525D18B54F /* Build configuration list for PBXNativeTarget "Pods-TargetActionMediaDemo" */;
+			buildPhases = (
+				B47FF007B66DB3E0F1491935B4EC6F4F /* Headers */,
+				AF7DF0CC17BC5AA0FA04F73260B69DAD /* Sources */,
+				D096224103AC64EC4212E3A45BE57DF3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E862E057DC0BA51DA6ED47C0DEF6EBB1 /* PBXTargetDependency */,
+				16AAD7CF5BD84C80FCFE8533B6E0C2A6 /* PBXTargetDependency */,
+				BAE50BE3764E781053CD7AC5200BC828 /* PBXTargetDependency */,
+			);
+			name = "Pods-TargetActionMediaDemo";
+			productName = "Pods-TargetActionMediaDemo";
+			productReference = EE2D108F255493989284AB699E5741E4 /* libPods-TargetActionMediaDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D9AEEB3FEF9F50CBFE1C63CD3D6489FE /* CTMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30995A182312D1663C855369A983A24 /* Build configuration list for PBXNativeTarget "CTMediator" */;
+			buildPhases = (
+				4D474C85187E93D550E47D6BBA5E1D20 /* Headers */,
+				4B91A2305F43517C289E8BF758104E2E /* Sources */,
+				81A893724DFEE94460FC685824F1AA0B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTMediator;
+			productName = CTMediator;
+			productReference = FD8510CE322169033E9DE966FC06DED3 /* libCTMediator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FEFEA08FBDCF7A6AB30A042B4565C646 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B567E31ADCE7F17CF3E315FF3C60EDC1 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				D17066015512070524A4C491124FCDCD /* Headers */,
+				A6A21D37DA3B64E422911C37C56E20D8 /* Sources */,
+				CF20B16C528D9E6BD38612D8ECB96CEA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = E189B2F5C9FA119544E9A7224ACC649E /* libYYModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E4DA22C676DE768538F50BE0C330282E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9AEEB3FEF9F50CBFE1C63CD3D6489FE /* CTMediator */,
+				B13CD417CBD237BFE6686582AA537B35 /* Pods-TargetActionMediaDemo */,
+				505DD2C238ACF426B92D20F5B2FEF455 /* Pods-TargetActionMediaDemo-Common */,
+				7A70C8A21E98563590383196A2B56CBD /* SigmaTableViewModel */,
+				FEFEA08FBDCF7A6AB30A042B4565C646 /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30DCDED20C9002E24E3F291B853F03D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9E60B197B6FBE7574BAC4B6166BAEE /* Pods-TargetActionMediaDemo-Common-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B91A2305F43517C289E8BF758104E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F59F6C23C2FA4894738C6D4574DF71 /* CTMediator-dummy.m in Sources */,
+				8FBED9C849B923F31F9017F7D300AA78 /* CTMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D515F9D0CE65A3EC5070F31983C6753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444B5108AD682A2D0E0CD95264481992 /* SigmaTableViewModel-dummy.m in Sources */,
+				02FF46CE21C6F721943446A66B0CD56C /* YZSTableViewCellModel.m in Sources */,
+				2468BAC92D8016307969093A1E96C2F3 /* YZSTableViewModel.m in Sources */,
+				82342B47913E3D3F2943C6827F3ABB22 /* YZSTableViewSectionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A21D37DA3B64E422911C37C56E20D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C2368A7635959A5E1536BAE7A3ABE /* NSObject+YYModel.m in Sources */,
+				70B1CAFA7A61AAA4C92B1E55AC2B1F1A /* YYClassInfo.m in Sources */,
+				28599E035FBD39F7DE24B78F1549EFD2 /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7DF0CC17BC5AA0FA04F73260B69DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD1CAA070EB177316EA138BDDAF870E /* Pods-TargetActionMediaDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16AAD7CF5BD84C80FCFE8533B6E0C2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SigmaTableViewModel;
+			target = 7A70C8A21E98563590383196A2B56CBD /* SigmaTableViewModel */;
+			targetProxy = 5E61AAE0E8577314487B21C29E6E8465 /* PBXContainerItemProxy */;
+		};
+		572E3B2C46885442529D780058FC1640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = FEFEA08FBDCF7A6AB30A042B4565C646 /* YYModel */;
+			targetProxy = 2F89F823D826DCCD6AB08B3A00077344 /* PBXContainerItemProxy */;
+		};
+		B9C56108FFAEF0ED205F9167FA38452D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = D9AEEB3FEF9F50CBFE1C63CD3D6489FE /* CTMediator */;
+			targetProxy = 77D9E20B36B49111D8F4E726B969A08A /* PBXContainerItemProxy */;
+		};
+		BAE50BE3764E781053CD7AC5200BC828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = FEFEA08FBDCF7A6AB30A042B4565C646 /* YYModel */;
+			targetProxy = 4AD50A5AF3B4A30C2D2F941DCC941104 /* PBXContainerItemProxy */;
+		};
+		E862E057DC0BA51DA6ED47C0DEF6EBB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTMediator;
+			target = D9AEEB3FEF9F50CBFE1C63CD3D6489FE /* CTMediator */;
+			targetProxy = E8E4E5957412E5007B1279D0E093F567 /* PBXContainerItemProxy */;
+		};
+		F02DCC0F610F7F450D8ECA353EE7F4FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SigmaTableViewModel;
+			target = 7A70C8A21E98563590383196A2B56CBD /* SigmaTableViewModel */;
+			targetProxy = C561592E04992F6F0903D640B1BB893F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		08922BCA9F99E79AAF5D034CFFAE2118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F106FAA78A4E5EBB020610C2547719D /* CTMediator.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CTMediator;
+				PRODUCT_NAME = CTMediator;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B6C7992A9DCBE9F0BC369D37D193BCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A4F743B9EABE5A03482DC115B1F9CA /* Pods-TargetActionMediaDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2529CC17C8B496006A29850CB6F7A17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FC437EC8F5FF1EB9CE2331ACCC9E01 /* Pods-TargetActionMediaDemo-Common.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B1665A3AAF1A900ECCC0BD618874B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC7F341A9D81D869A756AA55D978942 /* Pods-TargetActionMediaDemo-Common.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D23183FC531698100625A6459E43464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECCCAFA0C50618AE13A94564DFB2BC0 /* Pods-TargetActionMediaDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9203C4FD4F9A9D3F9840AADB986557B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F106FAA78A4E5EBB020610C2547719D /* CTMediator.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CTMediator;
+				PRODUCT_NAME = CTMediator;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948C0EE21147678280C7981BE3ADE192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DA72DFFC4B40FDBB8CE38C580BF655 /* SigmaTableViewModel.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SigmaTableViewModel/SigmaTableViewModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SigmaTableViewModel;
+				PRODUCT_NAME = SigmaTableViewModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AA67119E1D637C3659F9D6C8099C76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5933F5E0AC4352EDE0444813C8BC3375 /* YYModel.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D15AE05F1178BE886C7F1D9A1B2FB5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5933F5E0AC4352EDE0444813C8BC3375 /* YYModel.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F69700A7BFE94759B0D43E65533D79A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DA72DFFC4B40FDBB8CE38C580BF655 /* SigmaTableViewModel.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SigmaTableViewModel/SigmaTableViewModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SigmaTableViewModel;
+				PRODUCT_NAME = SigmaTableViewModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5093CA7D690346E53FBAD8205D919860 /* Build configuration list for PBXNativeTarget "Pods-TargetActionMediaDemo-Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B1665A3AAF1A900ECCC0BD618874B8 /* Debug */,
+				2529CC17C8B496006A29850CB6F7A17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30995A182312D1663C855369A983A24 /* Build configuration list for PBXNativeTarget "CTMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9203C4FD4F9A9D3F9840AADB986557B4 /* Debug */,
+				08922BCA9F99E79AAF5D034CFFAE2118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B567E31ADCE7F17CF3E315FF3C60EDC1 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15AE05F1178BE886C7F1D9A1B2FB5E3 /* Debug */,
+				9AA67119E1D637C3659F9D6C8099C76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE4F3D5A36A9DDA7EE9F061D7676CAD /* Build configuration list for PBXNativeTarget "SigmaTableViewModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69700A7BFE94759B0D43E65533D79A2 /* Debug */,
+				948C0EE21147678280C7981BE3ADE192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA55114E11163BCF75973A525D18B54F /* Build configuration list for PBXNativeTarget "Pods-TargetActionMediaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6C7992A9DCBE9F0BC369D37D193BCE /* Debug */,
+				6D23183FC531698100625A6459E43464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

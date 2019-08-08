@@ -1,0 +1,46 @@
+source 'https://github.com/ModulizationDemo/PrivatePods.git'
+
+
+pre_install do |installer|
+
+Pod::PodTarget.send(:define_method, :static_framework?) { return true }
+end
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+platform :ios, '9.0'
+
+#disable some warnings
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            #disable some warnings of Pods
+            config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO'
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        end
+    end
+end
+
+def commonPods()
+    #some 3rd party pods for demo
+    #    pod 'AFNetworking'
+    pod 'YYModel', :path => './LocalPod' 
+    pod 'SigmaTableViewModel', :path => './LocalPod' 
+    pod 'CTMediator', :path => './LocalPod' 
+end
+
+def mediatorPods()
+    pod 'Bifrost', :path => '../' 
+end
+
+workspace "TargetActionMediaDemo"
+target "TargetActionMediaDemo" do
+    project 'App/App.xcodeproj'
+#    commonPods()
+#    mediatorPods()
+    target "Common" do
+        project 'Modules/Common/Common.xcodeproj'
+        commonPods()
+    end
+
+end

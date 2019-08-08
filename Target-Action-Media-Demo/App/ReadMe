@@ -1,0 +1,5 @@
+ReadMe
+因为暂时没有将各个Xcode子工程通过Pod管理，所以需要做如下两个设置：
+1、子工程需要手动设置search path（pod管理后，不需要）
+2、在Main工程需要手动添加子工程依赖和lib库依赖
+2、在Main工程的copy resource bundles 需要手动拖动编译好后的bundle到主工程中

@@ -1,0 +1,26 @@
+PODS:
+  - CTMediator (25)
+  - SigmaTableViewModel (1.0.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - CTMediator (from `./LocalPod`)
+  - SigmaTableViewModel (from `./LocalPod`)
+  - YYModel (from `./LocalPod`)
+
+EXTERNAL SOURCES:
+  CTMediator:
+    :path: "./LocalPod"
+  SigmaTableViewModel:
+    :path: "./LocalPod"
+  YYModel:
+    :path: "./LocalPod"
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  SigmaTableViewModel: 0b3c92fd2ee235913764c9e14785e856492e550a
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 72045cba611cbb26280a8a2f589819e32999ddf1
+
+COCOAPODS: 1.6.1
