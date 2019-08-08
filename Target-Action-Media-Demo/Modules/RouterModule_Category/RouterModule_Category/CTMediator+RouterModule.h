@@ -26,7 +26,12 @@ static NSString *const kRouteShopModuleShopDetail = @"//shop/detail";
 //所有涉及到Router调用建议汇总到此处，此类负责Router正则匹配，并选择合适的本地服务去转发
 @interface CTMediator (RouterModule)
 
-//complexParams可以放入block回调等，比如A页面跳转到B页面，且需要使用B页面返回数据，可以在A页面构造block放入参数中，在B页面取出
+/**
+ * 远程Route调度入口
+ * @param complexParams 可以放入block回调等，比如A页面跳转到B页面，且需要使用B页面返回数据，可以在A页面构造block放入参数中，在B页面取出
+ * @param url NSURL类型路径
+ *
+ */
 - (nullable id)routerModule_performActionWithUrl:(NSURL *)url complexParams:(nullable NSDictionary*)complexParams ;
 @end
 

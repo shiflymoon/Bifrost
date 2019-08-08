@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Target_SaleModule : NSObject
 - (void) Action_setUp;
 
-- (void)Action_addGoodsAndNum:(NSDictionary *)params;// kSaleModuleShoppingCartParamGoodId & 
+- (void)Action_addGoodsAndNum:(NSDictionary *)params;// kSaleModuleShoppingCartParamGoodId & kSaleModuleShoppingCartParamNum
 
 - (void)Action_addShoppingCartGoods:(NSDictionary*)params;
 - (NSUInteger)Action_shoppinCartGoodsNum ;
