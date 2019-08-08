@@ -14,6 +14,6 @@
 {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"application"] = application;
-    return  [self performTarget:@"HomeModule" action:@"showHomeVC:" params:params shouldCacheTarget:NO];
+    return  [[self performTarget:@"HomeModule" action:@"showHomeVC:" params:params shouldCacheTarget:NO] boolValue];
 }
 @end

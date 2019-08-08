@@ -59,7 +59,7 @@
 -(nullable id) goodModuleRoute:(NSString *) regrexRoute withParams:(NSDictionary *) params
 {
     if([regrexRoute isEqualToString:kRouteGoodModuleAllGoodsList]){
-        /* 不推荐这种做法
+        /* 不推荐这种做法，这种做法一定程度上分散了hardcode，不好维护，尽量让hardcode集中在各个模块的category中
         return [self performTarget:@"GoodModule" action:@"goodsListViewController" params:params shouldCacheTarget:NO];*/
         //推荐做法
        return [self goodModule_goodsListViewController];
