@@ -38,7 +38,7 @@ NSString * const kBifrostExceptionAPIArguments = @"kBifrostExceptionAPIArguments
 @property (nonatomic, copy) BifrostExceptionHandler _Nullable exceptionHandler;
 @property (nonatomic, strong) NSMutableDictionary *moduleDict; // <moduleName, moduleClass>
 @property (nonatomic, strong) NSMutableDictionary *moduleInvokeDict;
-+ (instancetype _Nonnull )sharedInstance;
+
 @end
 
 @implementation Bifrost

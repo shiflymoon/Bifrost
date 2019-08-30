@@ -12,10 +12,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GoodsModel : NSObject
-@property(nonatomic, strong) NSString *goodsId;
+@property (nonatomic, strong) NSString * goodsId;
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, assign) CGFloat price;
 @property(nonatomic, assign) NSInteger inventory;
 @end
 
 NS_ASSUME_NONNULL_END
+
+

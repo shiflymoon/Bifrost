@@ -49,6 +49,8 @@ typedef _Nullable id (^BifrostExceptionHandler)(NSException * _Nonnull exception
 
 @interface Bifrost : NSObject
 
++ (instancetype _Nonnull )sharedInstance;
+
 /**
  Method to set exception handler
 

@@ -7,8 +7,11 @@
 //
 
 #import "CTMediator+GoodModule.h"
-
+/*
+ * Good goodid
+ */
 NSString *const kGoodsModelParamGoodId = @"goodsId";//value为NSString
+
 NSString *const kGoodsModelParamGoodName = @"name";//value为NSString
 NSString *const kGoodsModelParamGoodPrice = @"price";//value为NSNumber
 NSString *const kGoodsModelParamGoodInventory = @"inventory";//value为NSNumber
@@ -17,6 +20,9 @@ NSString * const GoodModuleTarget = @"GoodModule";
 @implementation CTMediator (GoodModule)
 
 #pragma mark - 需要提前初始化代码
+/*
+ * Good goodid
+ */
 +(void) load
 {
     [[CTMediator sharedInstance] performTarget:GoodModuleTarget action:@"setup" params:nil shouldCacheTarget:NO];
@@ -43,7 +49,7 @@ NSString * const GoodModuleTarget = @"GoodModule";
 {
     return [self performTarget:GoodModuleTarget action:@"popularGoodsList" params:nil shouldCacheTarget:NO];
 }
-- (NSArray<NSDictionary *>*)goodModule_allGoodsList //所有商品
+- ( NSArray < NSDictionary * > * )goodModule_allGoodsList //所有商品
 {
     return [self performTarget:GoodModuleTarget action:@"allGoodsList" params:nil shouldCacheTarget:NO];
 }
