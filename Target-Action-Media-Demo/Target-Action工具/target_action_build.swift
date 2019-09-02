@@ -213,18 +213,15 @@ func buildPartCommondPRJ() {
     //由于没有调用脚本产生TargetAction工程和Category工程，所以需要手动创建对应文件
     let categoryHFile = "\(outPut)/\(moduleName)\(Constants.moduleSuffix)Category.h"
     let categroryMFile = "\(outPut)/\(moduleName)\(Constants.moduleSuffix)Category.m"
-    createFiles(files: [categoryHFile,categroryMFile]) 
+    //申明文件
+    let targetActionHFile = "\(outPut)/Target_\(moduleName)\(Constants.moduleSuffix).h"
+    let targetActionMFile = "\(outPut)/Target_\(moduleName)\(Constants.moduleSuffix).m"
+    createFiles(files: [categoryHFile,categroryMFile,targetActionHFile,targetActionMFile]) 
     
     if let interfaceFilePath = pCommond.1 {
         //构造动态产生代码
         let moduleCategory = ModuleCategory(sourceStr: String(file: interfaceFilePath), moduleName: moduleName)
         let moduleTargetAction = ModuleTargetAction(methodInfo: moduleCategory.tartgetActionMethodInfo, importStr: moduleCategory.moduleHeadImportDeclare, mName: moduleName) 
-        
-        //申明文件
-        let targetActionHFile = "\(outPut)/Target_\(moduleName)\(Constants.moduleSuffix).h"
-        let targetActionMFile = "\(outPut)/Target_\(moduleName)\(Constants.moduleSuffix).m"
-        
-        createFiles(files: [targetActionHFile,targetActionMFile]) 
         
         //写入内容-Category.h
         var categoryHStr = String(file: categoryHFile)
@@ -278,13 +275,13 @@ func buildPartCommondPRJ() {
         }
         let moduleEn = ModuleEntity(nameSource: entities, mName: moduleName)
         var categoryHStr = String(file: categoryHFile)
-        var categoryMStr = String(file: categroryMFile)
+        var targetActionMStr = String(file: targetActionMFile)
         
         let _ = categoryHStr.insert(pattern: Constants.module_nReg, content: moduleEn.moduleDeclare, iType: .After)
-        let _ = categoryMStr.insert(pattern: Constants.module_nReg, content: moduleEn.moduleDefine, iType: .After)
+        let _ = targetActionMStr.insert(pattern: Constants.module_nReg, content: moduleEn.moduleDefine, iType: .After)
       
         categoryHStr.write2File(file: categoryHFile)
-        categoryMStr.write2File(file: categroryMFile)
+        targetActionMStr.write2File(file: targetActionMFile)
     }
     
     shell("open",".")
@@ -341,7 +338,7 @@ func buildTargetActionPRJ() {
   
     //替换category.m文件
     var categoryInterfaceMStr = String(file: categoryPathTruple.1)
-    var beforeC = moduleEn.moduleDefine
+    var beforeC = ""
     if let categoryImportDefien = moduleCategory.moduleMFileImportDefine {//.m
         let forOneContent = categoryImportDefien + "\n" + moduleCategory.moduleTargetDefine
         beforeC += forOneContent
@@ -365,9 +362,11 @@ func buildTargetActionPRJ() {
     
     //替换targetacion.m文件
     var targetActionMStr = String(file: targetActionPathTruple.1)
+    var taBeforeC = moduleEn.moduleDefine
     if let targetActionImport = moduleTargetAction.moduleHeadImportDeclare {//.m
-       let _ = targetActionMStr.insert(pattern: Constants.moduleTaImpReg, content: targetActionImport, iType: .InFront)
+       taBeforeC += targetActionImport
     }
+    let _ = targetActionMStr.insert(pattern: Constants.moduleTaImpReg, content: taBeforeC, iType: .InFront)
     if let targetActionImp = moduleTargetAction.moduleInterfaceDefine {
         let _ = targetActionMStr.insert(pattern: Constants.moduleTaImpReg, content: targetActionImp, iType: .After)
     }
@@ -561,8 +560,8 @@ func kParamName(moduleName: String, param: String) -> String {
     return   "k" + moduleName.firstCharUpercased() + "Param" + param.firstCharUpercased()
 }
 
-func kEntityName(moduleName: String,name: String) -> String {
-     return   "k" + moduleName.firstCharUpercased() + "Entity" + name.firstCharUpercased()
+func kEntityName(moduleName: String,name: String,eName: String) -> String {
+     return   "k" + moduleName.firstCharUpercased() + eName + name.firstCharUpercased()
 }
 
 class TagetActionMethodInfo {
@@ -618,8 +617,8 @@ class ModuleEntity {
                 let pType = typePName.0
                 let pName = typePName.1
                 onePropertyDeclare += buildOnePropertyComment(property: pName, type: pType, name: name)
-                onePropertyDeclare += buildOnePropetyDeclare(property: pName)
-                onePropertyDefine += buildOnePropertyDefine(property: pName)
+                onePropertyDeclare += buildOnePropetyDeclare(property: pName ,eName: name)
+                onePropertyDefine += buildOnePropertyDefine(property: pName, eName: name)
                 onePropertyDeclare += "\n"
                 onePropertyDefine += "\n"
                 
@@ -642,14 +641,14 @@ class ModuleEntity {
         return placeStr
     }
     
-    func buildOnePropetyDeclare(property: String) -> String {
+    func buildOnePropetyDeclare(property: String,eName: String) -> String {
         let prefix = Constants.moduleConstantsDeclarePrefix
-        return prefix + kEntityName(moduleName: moduleName, name: property) + " ;"
+        return prefix + kEntityName(moduleName: moduleName, name: property,eName: eName) + " ;"
     }
     
-    func buildOnePropertyDefine(property: String) -> String {
+    func buildOnePropertyDefine(property: String,eName: String) -> String {
         let prefix = Constants.moduleConstantsDefinePrefix
-        let mid =  kEntityName(moduleName: moduleName, name: property)+" = @\""+property.lowercased()+"\""
+        let mid =  kEntityName(moduleName: moduleName, name: property,eName: eName)+" = @\""+property.lowercased()+"\""
         let full = prefix + mid + ";"
         return full
     }
@@ -823,14 +822,14 @@ class ModuleCategory {
        
         let paramsArray = Array<String>(paramsSet)
         
+        let definePragma = "#pragma mark - \(moduleName)\(Constants.moduleSuffix) Function Param key \n"
         if let importDeclare = uiKitExternDeclare(module: moduleName, params: paramsArray) {
            
-            let strData = importDeclare.joined(separator: "\n")+"\n\n"
+            let strData = definePragma + importDeclare.joined(separator: "\n")+"\n\n"
             self.moduleHeadImportDeclare = strData
         }
       
         if let mFileDefine = uiKitExternDefine(module: moduleName, params: paramsArray) {
-            let definePragma = "#pragma mark - \(moduleName)\(Constants.moduleSuffix) Function Param key \n"
             let strData = definePragma + mFileDefine.joined(separator:  "\n")+"\n"
             self.moduleMFileImportDefine = strData
         }
@@ -1022,7 +1021,7 @@ class ModuleCategory {
         
         var result = [String]();
         
-        result.append(importUIKit())
+        //result.append(importUIKit())
         
         let prefix = Constants.moduleConstantsDeclarePrefix
         
