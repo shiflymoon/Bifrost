@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "HomeModuleService.h"
 #import "Bifrost+Router.h"
-#import <CoreBluetooth/CoreBluetooth.h>
 #import <UIKit/UIKit.h>
 
 #define Safe(obj) obj ? obj : [NSNull null]
@@ -20,12 +19,10 @@
 
 @implementation AppDelegate
 
-- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
-    
-}
 
 -(void) regexTest
 {
+    /*
     NSString *path =  @"/Users/shiguiling063/Desktop/testPro/TestSwiftControl/TestSwiftControl/SaleModuleOut/Sale/Sale/Module/Target_TemplateModule.h";//Target_SaleModule.h
     NSData *data =  [[NSFileManager defaultManager] contentsAtPath:path];//Target_SaleModule.h
 
@@ -50,7 +47,7 @@
         [handle writeData:[fStr dataUsingEncoding:NSUTF8StringEncoding]];
         [handle synchronizeFile];
         [handle closeFile];
-    }
+    }*/
     
    
     
@@ -65,10 +62,11 @@
    // NSString *eStr = @"NS[a-zA-Z<>\\*\\s,_]+\\*";
     //
    // NSString * eStr = @"@interface([a-zA-Z_0-9\\s]+):[a-zA-Z_0-9\\s]+(@property[a-zA-Z,0-9\\s\\*\\(\\)]+;\\s*)+@end";
-    NSString *eStr = @"@property\\s*\\([a-zA-Z,0-9_\\s]+\\)\\s*([a-zA-Z0-9_]+\\s*\\*?)\\s*([a-zA-Z0-9_]+)\\s*;";
-    NSString *testSource = @"@interface GoodsModel : NSObject\r@property (nonatomic, strong) NSString * goodsId;\r @property(nonatomic, strong) NSString *name;\r @property(nonatomic, assign) CGFloat price;\r @property(nonatomic, assign) NSInteger inventory;\r@end";
+  //  NSString *eStr = @"@property\\s*\\([a-zA-Z,0-9_\\s]+\\)\\s*([a-zA-Z0-9_]+\\s*\\*?)\\s*([a-zA-Z0-9_]+)\\s*;";
+   // NSString *testSource = @"@interface GoodsModel : NSObject\r@property (nonatomic, strong) NSString * goodsId;\r @property(nonatomic, strong) NSString *name;\r @property(nonatomic, assign) CGFloat price;\r @property(nonatomic, assign) NSInteger inventory;\r@end";
   
-
+    NSString * eStr = @"<a>(.*)?</a>";
+    NSString * testSource = @"<a> href = \"a\"</a>good<a>";
     //NSString *eStr = @"[\\+|-]\\s*\\(\\s*[a-zA-Z<>\\s\\*_,]+\\s*\\*?\\s*\\)";//找到返回值Prefix
    // NSString *eStr = @"\\s*([a-zA-Z]+):(\\s*\\(\\s*[a-zA-Z<>\\s\\*_,]+\\s*\\*?\\s*\\))\\s*([a-zA-Z]+)";//找到三个参数
    // NSString *eStr = @"[\\+|-]\\s*\\(\\s*([a-zA-Z<>\\s\\*_,]+\\s*\\*?)\\s*\\)";//找到了返回类型

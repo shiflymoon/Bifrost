@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsKeySwiftTargetModuleName";
+NSString * const kCTMediatorCompletion = @"kCTMediatorCompletion";
 
 @interface CTMediator ()
 
@@ -37,7 +38,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
  aaa://targetA/actionB?id=1234
  */
 
-- (id)performActionWithUrl:(NSURL *)url complexParams:(nullable NSDictionary*)complexParams completion:(void (^)(NSDictionary *))completion
+- (id)performActionWithUrl:(NSURL *)url complexParams:(nullable NSDictionary*)complexParams completion:(CTMediatorCompletion)completion
 {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     NSString *urlString = [url query];
@@ -50,6 +51,10 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
         [params setValuesForKeysWithDictionary:complexParams];
     }
     
+    if(completion) {
+        [params setObject:completion forKey:kCTMediatorCompletion];
+    }
+    
     // 这里这么写主要是出于安全考虑，防止黑客通过远程方式调用本地模块。这里的做法足以应对绝大多数场景，如果要求更加严苛，也可以做更加复杂的安全逻辑。
     NSString *actionName = [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
     if ([actionName hasPrefix:@"native"]) {//如果有些业务类禁止远程调用，采用action前加native约束
@@ -58,17 +63,11 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     
     // 这个demo针对URL的路由处理非常简单，就只是取对应的target名字和method名字，但这已经足以应对绝大部份需求。如果需要拓展，可以在这个方法调用之前加入完整的路由逻辑
     id result = [self performTarget:url.host action:actionName params:params shouldCacheTarget:NO];
-    if (completion) {
-        if (result) {
-            completion(@{@"result":result});
-        } else {
-            completion(nil);
-        }
-    }
+   
     return result;
 
 }
-- (id)performActionWithUrl:(NSURL *)url completion:(void (^)(NSDictionary *))completion
+- (id)performActionWithUrl:(NSURL *)url completion:(CTMediatorCompletion)completion
 {
     return [self performActionWithUrl:url complexParams:nil completion:completion];
 }
@@ -123,6 +122,13 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
 {
     NSString *targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
     [self.cachedTarget removeObjectForKey:targetClassString];
+}
+
+- (void)completeWithParameters:(nullable NSDictionary*)params result:(_Nullable id)result {
+    CTMediatorCompletion completion = params[kCTMediatorCompletion];
+    if (completion) {
+        completion(result);
+    }
 }
 
 #pragma mark - private methods

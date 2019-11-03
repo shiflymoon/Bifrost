@@ -10,7 +10,7 @@
 #import "HomeBundle.h"
 
 @implementation Target_HomeModule
--(double) Action_showHomeVC:(NSDictionary *) params
+-(BOOL) Action_showHomeVC:(NSDictionary *) params
 {
     UIApplication *application = params[@"application"];
     UIWindow *window = application.delegate.window;
@@ -19,6 +19,6 @@
     rootNavContoller.navigationItem.backBarButtonItem.title = @"";
     window.rootViewController = rootNavContoller;
     [window makeKeyAndVisible];
-    return (double)0.6789;
+    return YES;
 }
 @end
